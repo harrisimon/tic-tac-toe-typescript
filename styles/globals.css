@@ -13,7 +13,6 @@ body{
   border: solid 1px black;
 
 }
-
 .square {
   width: 200px;
   height: 200px;
@@ -43,17 +42,10 @@ p {
   background-color: aquamarine;
   padding: 1rem;
   cursor: pointer;
-
-
-}
-#X{
-  background-color: white;
-}
-#O{
-  background-color: white;
 }
 .reset:hover {
-  background-color: pink;
+  background-color: lightyellow;
+  border: solid 1px black;
 }
 button{
   background-color: white;
