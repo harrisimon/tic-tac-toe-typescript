@@ -3,14 +3,18 @@ function Square({
 	value,
 	onClick,
 	winner,
+    currentPlayer
 }: {
 	winner: Player
 	value: Player
+    currentPlayer: string | null
 	onClick: () => void
+    
 }) {
 	if (!value) {
 		return (
 			<button
+                id={currentPlayer}
 				className="square"
 				onClick={onClick}
 				disabled={Boolean(winner)}

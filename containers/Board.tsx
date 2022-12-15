@@ -70,6 +70,7 @@ const Board = () => {
 					.map((_, i) => {
 						return (
 							<Square
+                                currentPlayer={currentPlayer}
 								winner={winner}
 								key={i}
 								onClick={() => setSquareValue(i)}

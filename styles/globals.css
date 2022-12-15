@@ -1,5 +1,12 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .grid {
-
+  display: flex;
+  font-family: 'Unbounded', cursive;
   display: grid;
   grid-gap: 0px;
   grid-template-columns: repeat(3, 1fr);
@@ -12,7 +19,9 @@
   height: 200px;
   font-size: 5rem;
   color:aliceblue;
+  font-family: 'Unbounded', cursive;
 }
+
 .square_o {
   background-color: green;
 }
@@ -20,10 +29,13 @@
 .square_x {
   background-color: crimson;
 }
+
 p {
   font-size: 2rem;
+  font-family: 'Unbounded', cursive;
 }
 .reset {
+  font-family: 'Unbounded', cursive;
   margin-top: 1rem;
   font-size: 2rem;
   border: none;
@@ -34,6 +46,21 @@ p {
 
 
 }
+#X{
+  background-color: white;
+}
+#O{
+  background-color: white;
+}
 .reset:hover {
-  background-color: blanchedalmond;
+  background-color: pink;
+}
+button{
+  background-color: white;
+}
+#X:hover{
+  background-color: pink;
+}
+#O:hover{
+  background-color: lightgreen;
 }
