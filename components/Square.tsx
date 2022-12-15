@@ -3,11 +3,11 @@ function Square({
 	value,
 	onClick,
 	winner,
-    currentPlayer
+    currentPlayer,
 }: {
 	winner: Player
 	value: Player
-    currentPlayer: string | null
+    currentPlayer: string
 	onClick: () => void
     
 }) {

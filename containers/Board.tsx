@@ -29,7 +29,7 @@ function checkWinner(squares: Player[]) {
 
 const Board = () => {
 	const [squares, setSquares] = useState(Array(9).fill(null))
-	const [currentPlayer, setCurrentPlayer] = useState<"X" | "O">(
+	const [currentPlayer, setCurrentPlayer] = useState<"X" | "O" | "win">(
 		Math.round(Math.random() * 1) === 1 ? "X" : "O"
 	)
 	const [winner, setWinner] = useState<Player>(null)
@@ -53,6 +53,7 @@ const Board = () => {
 		const win = checkWinner(squares)
 		if (win) {
 			setWinner(win)
+            setCurrentPlayer('win')
 		}
 		if (!win && !squares.filter((square) => !square).length) {
 			setWinner("TIE")
